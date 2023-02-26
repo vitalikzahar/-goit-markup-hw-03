@@ -33,11 +33,21 @@ ul {
   margin: 0;
   padding: 0;
 }
-.container{
-    width: 1158;
-    margin: 0;
+img {
+  display: block;
+}
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 3px solid tomato;
 }
 .logo {
+  display: block;
+  margin-right: 70px;
   font-family: Raleway, sans-serif;
   text-decoration: none;
   font-weight: 800;
@@ -51,11 +61,22 @@ ul {
 .logo-item {
   color: var(--title-blue-color);
 }
+.site-nav {
+  display: flex;
+}
+.site-nav-item {
+  display: flex;
+  align-items: center;
+}
 .list {
   list-style: none;
 }
 
 .link-item {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
@@ -65,12 +86,31 @@ ul {
 .link-item:active {
   color: var(--title-blue-color);
 }
+.list.nav {
+  display: flex;
+}
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+.contacts {
+  margin-left: auto;
+}
+.contacts-flex {
+  display: flex;
+}
+.contacts-item:not(:last-child) {
+  margin-right: 40px;
+}
 .link-item:hover,
 .link-item:focus {
   color: var(--link-hover-color);
 }
 
 .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   color: var(--primary-text-color);
   text-decoration: none;
   font-style: normal;
@@ -85,7 +125,18 @@ ul {
 .link:focus {
   color: var(--title-blue-color);
 }
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  outline: 3px solid teal;
+}
+.section.exemple {
+  padding-top: 0;
+}
 .hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
   background-color: var(--bacground-color-heroo-footer);
 }
 .hero-title {
@@ -94,6 +145,10 @@ ul {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
+  margin-bottom: 48px;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-button {
   font-family: Roboto, sans-serif;
@@ -104,24 +159,79 @@ ul {
   background-color: var(--button-title-color);
   color: var(--title-wite-color);
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--button-title-color);
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--button-hover-color);
 }
+.list-work {
+  display: flex;
+  justify-content: center;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1px;
+  line-height: 1.1;
   color: var(--title-text-color);
-
+  text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
+  outline: 2px solid tomato;
 }
+.section-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  margin-bottom: 8px;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: -150%;
+  z-index: -100;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  user-select: none;
+  pointer-events: none;
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+}
+
 .section-title.item {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+}
+
+.list-exemple {
+  display: flex;
+  gap: 24px;
+}
+/* our taem */
+.team-title {
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  text-align: center;
+}
+.team {
+  padding: 32px 16px;
 }
 
 .text {
@@ -168,12 +278,6 @@ ul {
   background-color: var(--button-hover-color);
 }
 
-.section-subtitle {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
 .section-text {
   font-weight: 400;
   font-size: 16px;
