@@ -170,7 +170,7 @@ img {
 }
 .list-work {
   display: flex;
-  justify-content: center;
+  gap: 24px;
 }
 
 .section-title {
@@ -236,6 +236,8 @@ img {
 }
 .team {
   padding: 32px 16px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .text {
@@ -272,6 +274,9 @@ footer > .container {
   line-height: 1.5;
 }
 /* -------------------------portfolio --------------------*/
+.portfolio-header{
+  border-bottom: 1px solid #E7E9FC;
+}
 .filter.list {
   display: flex;
   justify-content: center;
@@ -311,11 +316,14 @@ footer > .container {
   flex-wrap: wrap;
   gap: 48px 24px;
 }
-.portfolio-item{
-  border-bottom: 1px solid #E7E9FC;
-}
-.exemple-item{
-  padding: 32px 0px;
+
+.portfolio-exemple-item{
+  padding: 32px 0px 32px 16px;
+  background: #FFFFFF;
+
+border-left: 1px solid #E7E9FC;
+border-right: 1px solid #E7E9FC;
+border-bottom: 1px solid #E7E9FC;
 }
 .portfolio-exemple.section-subtitle {
   margin-bottom: 8px;
